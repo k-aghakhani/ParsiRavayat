@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/persian_background"
+
     android:padding="16dp">
 
     <!-- لوگو یا تصویر الهام‌گرفته از شاهنامه -->
@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:src="@drawable/ic_shahnameh"
         android:layout_gravity="center"
-        android:contentDescription="@string/app_logo"
+        android:contentDescription="..."
         android:layout_marginBottom="8dp" />
 
     <!-- عنوان برنامه با فونت فارسی سنتی -->
@@ -27,7 +27,6 @@
         android:textColor="#4E2A1E"
         android:gravity="center"
         android:typeface="serif"
-        android:fontFamily="@font/iranian_sans"
         android:paddingBottom="16dp" />
 
     <!-- خط تزئینی سنتی -->
