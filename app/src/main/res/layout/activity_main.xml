@@ -4,40 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     android:padding="16dp">
 
-    <!-- لوگو یا تصویر الهام‌گرفته از شاهنامه -->
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_shahnameh"
         android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
         android:contentDescription="..."
-        android:layout_marginBottom="8dp" />
+        android:src="@drawable/ic_shahnameh" />
 
-    <!-- عنوان برنامه با فونت فارسی سنتی -->
     <TextView
         android:id="@+id/tv_app_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="26sp"
-        android:textColor="#4E2A1E"
         android:gravity="center"
-        android:typeface="serif"
-        android:paddingBottom="16dp" />
+        android:paddingBottom="16dp"
+        android:text="@string/app_name"
+        android:textColor="#4E2A1E"
+        android:textSize="26sp"
+        android:typeface="serif" />
 
-    <!-- خط تزئینی سنتی -->
+
     <View
         android:layout_width="100dp"
         android:layout_height="2dp"
         android:layout_gravity="center"
-        android:background="#8C4C2F"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:background="#8C4C2F" />
 
-    <!-- لیست فایل‌های صوتی -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -53,9 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
+        android:backgroundTint="#6A1B9A"
         android:src="@drawable/baseline_add_call_24"
         android:tint="#FFFFFF"
-        app:fabSize="mini"
-        android:backgroundTint="#6A1B9A" />
+        app:fabSize="mini" />
 
 </LinearLayout>
