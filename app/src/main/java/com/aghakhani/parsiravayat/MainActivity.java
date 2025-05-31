@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Menu items with icons
         String[][] menuData = {
-                {"مالکیت فکری", "ic_info"},
+               // {"مالکیت فکری", "ic_info"},
                 {"تماس با ما", "ic_phone"},
                 {"فرم تماس", "ic_edit"}
         };
