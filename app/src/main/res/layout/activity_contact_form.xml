@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0E6F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        android:elevation="8dp"
+        android:clipToPadding="false"
+        app:cardCornerRadius="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ارسال پیام"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#6A1B9A"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+        <!-- Name Field with Icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#6A1B9A"
+            app:hintTextColor="#6A1B9A"
+            app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+            app:startIconTint="#6A1B9A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="نام"
+                android:inputType="textPersonName"
+                android:backgroundTint="#6A1B9A"
+                android:textColor="#212121"
+                android:textColorHint="#757575" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email Field with Icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#6A1B9A"
+            app:hintTextColor="#6A1B9A"
+            app:startIconDrawable="@android:drawable/ic_dialog_email"
+            app:startIconTint="#6A1B9A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ایمیل"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="#6A1B9A"
+                android:textColor="#212121"
+                android:textColorHint="#757575" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Message Field with Icon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#6A1B9A"
+            app:hintTextColor="#6A1B9A"
+            app:startIconDrawable="@android:drawable/ic_dialog_info"
+            app:startIconTint="#6A1B9A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterMessage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="پیام"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:gravity="top|start"
+                android:backgroundTint="#6A1B9A"
+                android:textColor="#212121"
+                android:textColorHint="#757575" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="#6A1B9A" />
+
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="ارسال"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#6A1B9A"
+            android:padding="12dp"
+            android:elevation="4dp"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>
