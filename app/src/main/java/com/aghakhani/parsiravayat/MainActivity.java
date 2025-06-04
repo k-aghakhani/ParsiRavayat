@@ -18,10 +18,12 @@ import android.widget.ImageView;
 import android.widget.ListPopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -31,6 +33,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -81,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Menu items with icons
         String[][] menuData = {
-               // {"مالکیت فکری", "ic_info"},
+                // {"مالکیت فکری", "ic_info"},
                 {"تماس با ما", "ic_phone"},
                 {"فرم تماس", "ic_edit"}
         };
@@ -133,13 +136,13 @@ public class MainActivity extends AppCompatActivity {
         popup.setOnItemClickListener((parent, view, position, id) -> {
             switch (position) {
                 case 0: // Intellectual Property
-                  //  startActivity(new Intent(MainActivity.this, IntellectualPropertyActivity.class));
+                    //  startActivity(new Intent(MainActivity.this, IntellectualPropertyActivity.class));
                     break;
                 case 1: // Contact Us
                     startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
                     break;
                 case 2: // Contact Form
-                   // startActivity(new Intent(MainActivity.this, ContactFormActivity.class));
+                    startActivity(new Intent(MainActivity.this, ContactFormActivity.class));
                     break;
             }
             popup.dismiss();
