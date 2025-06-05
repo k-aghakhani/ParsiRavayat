@@ -135,13 +135,13 @@ public class MainActivity extends AppCompatActivity {
         // Handle item clicks
         popup.setOnItemClickListener((parent, view, position, id) -> {
             switch (position) {
-                case 0: // Intellectual Property
+                case 3: // Intellectual Property
                     //  startActivity(new Intent(MainActivity.this, IntellectualPropertyActivity.class));
                     break;
-                case 1: // Contact Us
+                case 0: // Contact Us
                     startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
                     break;
-                case 2: // Contact Form
+                case 1: // Contact Form
                     startActivity(new Intent(MainActivity.this, ContactFormActivity.class));
                     break;
             }
