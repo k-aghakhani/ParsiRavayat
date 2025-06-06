@@ -32,7 +32,7 @@
         android:layout_height="2dp"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"
-        android:background="#8C4C2F" />
+        android:background="#6A1B9A" />
 
 
     <androidx.recyclerview.widget.RecyclerView
