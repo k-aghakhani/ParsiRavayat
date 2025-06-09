@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         // Menu items with icons
         String[][] menuData = {
                 // {"مالکیت فکری", "ic_info"},
-                {"تماس با ما", "ic_phone"},
+             //   {"تماس با ما", "ic_phone"},
                 {"فرم تماس", "ic_edit"}
         };
 
@@ -138,10 +138,10 @@ public class MainActivity extends AppCompatActivity {
                 case 3: // Intellectual Property
                     //  startActivity(new Intent(MainActivity.this, IntellectualPropertyActivity.class));
                     break;
-                case 0: // Contact Us
-                    startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
+                case 1: // Contact Us
+                   // startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
                     break;
-                case 1: // Contact Form
+                case 0: // Contact Form
                     startActivity(new Intent(MainActivity.this, ContactFormActivity.class));
                     break;
             }
