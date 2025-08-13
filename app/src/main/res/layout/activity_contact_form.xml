@@ -24,7 +24,7 @@
             android:text="ارسال پیام"
             android:textSize="28sp"
             android:textStyle="bold"
-            android:textColor="#6A1B9A"
+            android:textColor="#3F51B5"
             android:gravity="center"
             android:paddingBottom="24dp" />
 
